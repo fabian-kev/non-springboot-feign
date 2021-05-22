@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'com.fabiankevin.feign'
+version '1.0-SNAPSHOT'
+
+ext {
+    feignGroupId = 'io.github.openfeign'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'io.github.openfeign:feign-okhttp:11.2'
+    compile 'io.github.openfeign:feign-gson:11.2'
+//    implementation group: 'io.github.openfeign', name: 'feign-gson', version: '11.2'
+//    implementation group: 'io.github.openfeign', name: 'feign-gson', version: '11.0'
+    implementation group: 'io.github.openfeign', name: 'feign-jackson', version: '11.2'
+
+
+    compile 'io.github.openfeign:feign-slf4j:11.2'
+    compile 'com.google.code.gson:gson:2.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}

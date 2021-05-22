@@ -1,0 +1,5 @@
+com/fabiankevin/feign/User.java
+ com.fabiankevin.feign.User
+com/fabiankevin/feign/App.java
+ com.fabiankevin.feign.App
+ com.fabiankevin.feign.UserClient
